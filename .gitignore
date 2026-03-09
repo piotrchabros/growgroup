@@ -3,3 +3,4 @@ wp-config.php
 .htaccess
 *.log
 node_modules/
+.idea
