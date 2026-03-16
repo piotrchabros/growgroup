@@ -92,13 +92,11 @@ jQuery(function ($) {
         }
 
         function updateLogos() {
-            var siteLogos = $('.site-logo');
             var partnerLogos = $('.partner-logo');
 
             if (lightMode) {
                 $('body').addClass('lightmode');
                 localStorage.setItem('lightmode', 'active');
-                siteLogos.attr('src', growshopData.themeUrl + '/assets/images/growshop-logo-dark.png');
                 partnerLogos.each(function () {
                     var $img = $(this);
                     var src = $img.attr('src');
@@ -109,7 +107,6 @@ jQuery(function ($) {
             } else {
                 $('body').removeClass('lightmode');
                 localStorage.removeItem('lightmode');
-                siteLogos.attr('src', growshopData.themeUrl + '/assets/images/growshop-logo-light.png');
                 partnerLogos.each(function () {
                     var $img = $(this);
                     var src = $img.attr('src');
