@@ -43,12 +43,12 @@ $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
                     ?>
                 </div>
                 <div class="navbar-action-container">
-                    <div class="navbar-icon-wrapper">
-                        <div class="icon-circle">
+                    <a href="tel:<?php echo esc_attr( preg_replace( '/\s+/', '', $phone ) ); ?>" class="navbar-phone-link">
+                        <span class="navbar-phone-icon">
                             <i class="fa-solid fa-phone-volume"></i>
-                        </div>
+                        </span>
                         <h6><?php echo esc_html( $phone ); ?></h6>
-                    </div>
+                    </a>
                 </div>
             </div>
         </nav>
