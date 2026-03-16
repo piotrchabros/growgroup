@@ -1517,8 +1517,7 @@ body.lightmode .title-heading{
 
 .navbar-phone-icon {
     position: relative;
-    background-color: var(--accent-color);
-    color: var(--primary);
+    color: var(--accent-color);
     font-size: var(--font-size-4xl);
     width: 48px;
     height: 48px;

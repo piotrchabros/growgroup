@@ -10,10 +10,7 @@
 <?php wp_body_open(); ?>
 
 <?php
-$theme_uri    = get_template_directory_uri();
 $logo         = get_field( 'site_logo', 'option' );
-$logo_url     = $logo ? $logo['url'] : $theme_uri . '/assets/images/growshop-logo-light.png';
-$logo_alt     = $logo ? ( $logo['alt'] ?: 'Grow Group' ) : 'Grow Group';
 $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
 ?>
 
@@ -23,7 +20,11 @@ $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
             <div class="navbar-container">
                 <div class="logo-container">
                     <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php bloginfo( 'name' ); ?>">
-                        <img src="<?php echo esc_url( $logo_url ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo_alt ); ?>">
+                        <?php if ( $logo ) : ?>
+                            <img src="<?php echo esc_url( $logo['url'] ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo['alt'] ?: get_bloginfo( 'name' ) ); ?>">
+                        <?php else : ?>
+                            <?php bloginfo( 'name' ); ?>
+                        <?php endif; ?>
                     </a>
                 </div>
                 <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

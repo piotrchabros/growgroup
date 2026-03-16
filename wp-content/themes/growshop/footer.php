@@ -3,8 +3,6 @@ $theme_uri = get_template_directory_uri();
 
 // ACF Options
 $logo          = get_field( 'site_logo', 'option' );
-$logo_url      = $logo ? $logo['url'] : $theme_uri . '/assets/images/growshop-logo-light.png';
-$logo_alt      = $logo ? ( $logo['alt'] ?: 'Grow Group' ) : 'Grow Group';
 $tagline       = get_field( 'site_tagline', 'option' ) ?: 'AI Growth System dla biznesu';
 $description   = get_field( 'site_description', 'option' ) ?: 'Skalujemy sprzedaż firm poprzez AI, reklamy, UX/UI, automatyzacje i SEO.';
 $email         = get_field( 'contact_email', 'option' ) ?: 'kontakt@growgroup.now';
@@ -36,7 +34,11 @@ $tiktok    = get_field( 'social_tiktok', 'option' );
                             <div class="col col-xl-4">
                                 <div class="footer-logo-container">
                                     <div class="logo-container-footer">
-                                        <img src="<?php echo esc_url( $logo_url ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo_alt ); ?>">
+                                        <?php if ( $logo ) : ?>
+                                            <img src="<?php echo esc_url( $logo['url'] ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo['alt'] ?: get_bloginfo( 'name' ) ); ?>">
+                                        <?php else : ?>
+                                            <span class="navbar-brand"><?php bloginfo( 'name' ); ?></span>
+                                        <?php endif; ?>
                                     </div>
                                     <h4><?php echo esc_html( $tagline ); ?></h4>
                                     <p><?php echo esc_html( $description ); ?></p>
