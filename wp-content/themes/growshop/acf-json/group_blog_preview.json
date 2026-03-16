@@ -1,0 +1,74 @@
+{
+    "key": "group_blog_preview",
+    "title": "Blog Preview",
+    "fields": [
+        {
+            "key": "field_bp_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "bp_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_bp_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "bp_sub_heading_text",
+            "type": "text",
+            "default_value": "Insights & Trends"
+        },
+        {
+            "key": "field_bp_heading",
+            "label": "Nagłówek",
+            "name": "bp_heading",
+            "type": "text",
+            "default_value": "Blog – strategie i praktyki biznesowe"
+        },
+        {
+            "key": "field_bp_description",
+            "label": "Opis",
+            "name": "bp_description",
+            "type": "textarea",
+            "default_value": "Artykuły o skalowaniu sprzedaży, reklamie i optymalizacji konwersji w biznesie.",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_bp_blog_link_text",
+            "label": "Tekst linku do bloga",
+            "name": "bp_blog_link_text",
+            "type": "text",
+            "default_value": "Wszystkie artykuły"
+        },
+        {
+            "key": "field_bp_blog_link_url",
+            "label": "URL linku do bloga",
+            "name": "bp_blog_link_url",
+            "type": "url",
+            "instructions": "Zostaw puste, aby użyć domyślnej strony wpisów"
+        },
+        {
+            "key": "field_bp_posts_count",
+            "label": "Liczba wpisów",
+            "name": "bp_posts_count",
+            "type": "number",
+            "default_value": 3,
+            "min": 1,
+            "max": 9
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/blog-preview"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

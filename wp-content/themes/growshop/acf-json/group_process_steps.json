@@ -1,0 +1,106 @@
+{
+    "key": "group_process_steps",
+    "title": "Kroki procesu",
+    "fields": [
+        {
+            "key": "field_ps_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "ps_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_ps_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "ps_sub_heading_text",
+            "type": "text",
+            "default_value": "Growth Flow"
+        },
+        {
+            "key": "field_ps_heading",
+            "label": "Nagłówek",
+            "name": "ps_heading",
+            "type": "text",
+            "default_value": "Jak działamy"
+        },
+        {
+            "key": "field_ps_description",
+            "label": "Opis",
+            "name": "ps_description",
+            "type": "textarea",
+            "default_value": "Budujemy jeden spójny system wzrostu, w którym każdy element wzmacnia pozostałe. Nie wdrażamy pojedynczych rozwiązań. Budujemy środowisko, które pracuje na wynik.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_ps_cta_text",
+            "label": "Tekst CTA",
+            "name": "ps_cta_text",
+            "type": "text",
+            "default_value": "Rozpocznij współpracę"
+        },
+        {
+            "key": "field_ps_cta_link",
+            "label": "Link CTA",
+            "name": "ps_cta_link",
+            "type": "text",
+            "default_value": "#kontakt"
+        },
+        {
+            "key": "field_ps_steps",
+            "label": "Kroki",
+            "name": "ps_steps",
+            "type": "repeater",
+            "min": 0,
+            "max": 8,
+            "layout": "block",
+            "button_label": "Dodaj krok",
+            "sub_fields": [
+                {
+                    "key": "field_ps_step_icon_class",
+                    "label": "Klasa ikony FA",
+                    "name": "icon_class",
+                    "type": "text",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_ps_step_number",
+                    "label": "Numer",
+                    "name": "number",
+                    "type": "text",
+                    "wrapper": { "width": "10" }
+                },
+                {
+                    "key": "field_ps_step_title",
+                    "label": "Tytuł",
+                    "name": "title",
+                    "type": "text",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_ps_step_description",
+                    "label": "Opis",
+                    "name": "description",
+                    "type": "textarea",
+                    "rows": 2,
+                    "wrapper": { "width": "40" }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/process-steps"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

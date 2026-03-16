@@ -1,0 +1,18 @@
+{
+    "name": "acf/tech-stack",
+    "title": "Technology Stack",
+    "description": "Sekcja partnerów technologicznych — logotypy narzędzi",
+    "category": "growshop",
+    "icon": "images-alt2",
+    "keywords": ["tech", "stack", "partner", "logo"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/tech-stack/tech-stack.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "key": "group_team_members",
+    "title": "Zespół",
+    "fields": [
+        {
+            "key": "field_tm_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "tm_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_tm_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "tm_sub_heading_text",
+            "type": "text",
+            "default_value": "Zespół"
+        },
+        {
+            "key": "field_tm_heading",
+            "label": "Nagłówek",
+            "name": "tm_heading",
+            "type": "text",
+            "default_value": "Poznajcie naszych liderów"
+        },
+        {
+            "key": "field_tm_description",
+            "label": "Opis",
+            "name": "tm_description",
+            "type": "textarea",
+            "default_value": "Prowadzący projekt to przedsiębiorcy i praktycy biznesu budujący systemy sprzedażowe.",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_tm_members",
+            "label": "Członkowie zespołu",
+            "name": "tm_members",
+            "type": "repeater",
+            "min": 0,
+            "max": 8,
+            "layout": "block",
+            "button_label": "Dodaj członka",
+            "sub_fields": [
+                {
+                    "key": "field_tm_member_photo",
+                    "label": "Zdjęcie",
+                    "name": "photo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_tm_member_name",
+                    "label": "Imię i nazwisko",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "Użyj <br> do podziału linii",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_tm_member_role",
+                    "label": "Stanowisko",
+                    "name": "role",
+                    "type": "text",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_tm_member_linkedin",
+                    "label": "LinkedIn URL",
+                    "name": "linkedin_url",
+                    "type": "url",
+                    "wrapper": { "width": "25" }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/team-members"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

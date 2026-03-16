@@ -1,0 +1,90 @@
+{
+    "key": "group_target_audience",
+    "title": "Grupa docelowa",
+    "fields": [
+        {
+            "key": "field_ta_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "ta_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_ta_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "ta_sub_heading_text",
+            "type": "text",
+            "default_value": "Dla kogo?"
+        },
+        {
+            "key": "field_ta_heading",
+            "label": "Nagłówek",
+            "name": "ta_heading",
+            "type": "text",
+            "default_value": "Wspieramy ambitne firmy"
+        },
+        {
+            "key": "field_ta_cards",
+            "label": "Karty",
+            "name": "ta_cards",
+            "type": "repeater",
+            "min": 0,
+            "max": 6,
+            "layout": "block",
+            "button_label": "Dodaj kartę",
+            "sub_fields": [
+                {
+                    "key": "field_ta_card_title",
+                    "label": "Tytuł",
+                    "name": "title",
+                    "type": "text",
+                    "wrapper": { "width": "30" }
+                },
+                {
+                    "key": "field_ta_card_description",
+                    "label": "Opis",
+                    "name": "description",
+                    "type": "textarea",
+                    "rows": 2,
+                    "wrapper": { "width": "30" }
+                },
+                {
+                    "key": "field_ta_card_icon_class",
+                    "label": "Klasa ikony FA",
+                    "name": "icon_class",
+                    "type": "text",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_ta_card_is_highlighted",
+                    "label": "Wyróżniona?",
+                    "name": "is_highlighted",
+                    "type": "true_false",
+                    "wrapper": { "width": "15" }
+                }
+            ]
+        },
+        {
+            "key": "field_ta_footer_note",
+            "label": "Tekst stopki",
+            "name": "ta_footer_note",
+            "type": "text",
+            "default_value": "Nie dla projektów testowych."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/target-audience"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

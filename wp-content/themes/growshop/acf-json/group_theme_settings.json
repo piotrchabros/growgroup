@@ -1,0 +1,164 @@
+{
+    "key": "group_theme_settings",
+    "title": "Ustawienia Grow Group",
+    "fields": [
+        {
+            "key": "field_settings_tab_general",
+            "label": "Ogólne",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_settings_logo",
+            "label": "Logo",
+            "name": "site_logo",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium",
+            "instructions": "Logo strony (jasne, na ciemne tło)"
+        },
+        {
+            "key": "field_settings_tagline",
+            "label": "Tagline",
+            "name": "site_tagline",
+            "type": "text",
+            "default_value": "AI Growth System dla biznesu"
+        },
+        {
+            "key": "field_settings_description",
+            "label": "Krótki opis",
+            "name": "site_description",
+            "type": "textarea",
+            "default_value": "Skalujemy sprzedaż firm poprzez AI, reklamy, UX/UI, automatyzacje i SEO.",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_settings_tab_contact",
+            "label": "Kontakt",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_settings_phone",
+            "label": "Numer telefonu",
+            "name": "contact_phone",
+            "type": "text",
+            "default_value": "+48 789 354 695"
+        },
+        {
+            "key": "field_settings_email",
+            "label": "Email",
+            "name": "contact_email",
+            "type": "text",
+            "default_value": "kontakt@growgroup.now"
+        },
+        {
+            "key": "field_settings_location",
+            "label": "Lokalizacja",
+            "name": "contact_location",
+            "type": "text",
+            "default_value": "Warszawa, Polska"
+        },
+        {
+            "key": "field_settings_tab_social",
+            "label": "Social Media",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_settings_linkedin",
+            "label": "LinkedIn URL",
+            "name": "social_linkedin",
+            "type": "url"
+        },
+        {
+            "key": "field_settings_facebook",
+            "label": "Facebook URL",
+            "name": "social_facebook",
+            "type": "url"
+        },
+        {
+            "key": "field_settings_instagram",
+            "label": "Instagram URL",
+            "name": "social_instagram",
+            "type": "url"
+        },
+        {
+            "key": "field_settings_tiktok",
+            "label": "TikTok URL",
+            "name": "social_tiktok",
+            "type": "url"
+        },
+        {
+            "key": "field_settings_tab_footer",
+            "label": "Stopka",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_settings_footer_cta_heading",
+            "label": "CTA nagłówek",
+            "name": "footer_cta_heading",
+            "type": "text",
+            "default_value": "Bezpłatna konsultacja"
+        },
+        {
+            "key": "field_settings_footer_cta_description",
+            "label": "CTA opis",
+            "name": "footer_cta_description",
+            "type": "textarea",
+            "default_value": "Zobacz, jak możemy zwiększyć sprzedaż Twojej firmy. Bezpłatna konsultacja + wstępny audyt marketingowy.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_settings_footer_cta_text",
+            "label": "CTA tekst przycisku",
+            "name": "footer_cta_text",
+            "type": "text",
+            "default_value": "Umów konsultację"
+        },
+        {
+            "key": "field_settings_footer_cta_link",
+            "label": "CTA link",
+            "name": "footer_cta_link",
+            "type": "text",
+            "default_value": "#kontakt"
+        },
+        {
+            "key": "field_settings_copyright",
+            "label": "Tekst copyright",
+            "name": "footer_copyright",
+            "type": "text",
+            "default_value": "© 2026 Grow Group"
+        },
+        {
+            "key": "field_settings_privacy_url",
+            "label": "Polityka prywatności URL",
+            "name": "footer_privacy_url",
+            "type": "url"
+        },
+        {
+            "key": "field_settings_terms_url",
+            "label": "Regulamin URL",
+            "name": "footer_terms_url",
+            "type": "url"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "growshop-settings"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

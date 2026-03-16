@@ -1,0 +1,163 @@
+{
+    "key": "group_hero_banner",
+    "title": "Hero Banner",
+    "fields": [
+        {
+            "key": "field_hero_heading",
+            "label": "Nagłówek",
+            "name": "hero_heading",
+            "type": "text",
+            "default_value": "AI Growth System dla <span style=\"white-space: nowrap\">biznesu<\/span>",
+            "placeholder": "Wpisz nagłówek hero",
+            "instructions": "Możesz użyć HTML (np. <span> dla stylowania)"
+        },
+        {
+            "key": "field_hero_description",
+            "label": "Opis",
+            "name": "hero_description",
+            "type": "textarea",
+            "default_value": "Grow Group skaluje sprzedaż firm poprzez AI, reklamy, UX\/UI, automatyzacje i SEO — z gwarantowanymi wynikami.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_hero_scroll_text",
+            "label": "Tekst scroll",
+            "name": "hero_scroll_text",
+            "type": "text",
+            "default_value": "Dowiedz się jak skalujemy sprzedaż firm z gwarantowanymi wynikami."
+        },
+        {
+            "key": "field_hero_scroll_link",
+            "label": "Link scroll",
+            "name": "hero_scroll_link",
+            "type": "text",
+            "default_value": "#jak-dzialamy"
+        },
+        {
+            "key": "field_hero_cta_text",
+            "label": "Tekst CTA",
+            "name": "hero_cta_text",
+            "type": "text",
+            "default_value": "Umów konsultację"
+        },
+        {
+            "key": "field_hero_cta_link",
+            "label": "Link CTA",
+            "name": "hero_cta_link",
+            "type": "url",
+            "default_value": "#kontakt"
+        },
+        {
+            "key": "field_hero_youtube_video_id",
+            "label": "YouTube Video ID",
+            "name": "hero_youtube_video_id",
+            "type": "text",
+            "default_value": "P68V3iH4TeE",
+            "instructions": "Samo ID filmu z YouTube (np. P68V3iH4TeE)"
+        },
+        {
+            "key": "field_hero_reviewer_count",
+            "label": "Liczba klientów",
+            "name": "hero_reviewer_count",
+            "type": "text",
+            "default_value": "100+"
+        },
+        {
+            "key": "field_hero_reviewer_label",
+            "label": "Etykieta klientów",
+            "name": "hero_reviewer_label",
+            "type": "text",
+            "default_value": "zadowolonych klientów"
+        },
+        {
+            "key": "field_hero_reviewer_avatars",
+            "label": "Avatary klientów",
+            "name": "hero_reviewer_avatars",
+            "type": "gallery",
+            "instructions": "3 avatary klientów (kwadratowe, małe). Jeśli puste — użyte zostaną domyślne.",
+            "return_format": "array",
+            "library": "all",
+            "min": 0,
+            "max": 5,
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_hero_stats",
+            "label": "Statystyki",
+            "name": "hero_stats",
+            "type": "repeater",
+            "instructions": "4 statystyki wyświetlane pod hero. Jeśli puste — użyte zostaną domyślne.",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_hero_stat_prefix",
+                    "label": "Prefix",
+                    "name": "prefix",
+                    "type": "text",
+                    "default_value": "+",
+                    "wrapper": {
+                        "width": "10"
+                    }
+                },
+                {
+                    "key": "field_hero_stat_value",
+                    "label": "Wartość",
+                    "name": "value",
+                    "type": "text",
+                    "default_value": "0",
+                    "wrapper": {
+                        "width": "15"
+                    }
+                },
+                {
+                    "key": "field_hero_stat_suffix",
+                    "label": "Suffix",
+                    "name": "suffix",
+                    "type": "text",
+                    "default_value": "%",
+                    "wrapper": {
+                        "width": "10"
+                    }
+                },
+                {
+                    "key": "field_hero_stat_label",
+                    "label": "Etykieta",
+                    "name": "label",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "45"
+                    }
+                },
+                {
+                    "key": "field_hero_stat_bold",
+                    "label": "Wyróżniony",
+                    "name": "bold",
+                    "type": "true_false",
+                    "default_value": 0,
+                    "ui": 1,
+                    "wrapper": {
+                        "width": "20"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/hero-banner"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

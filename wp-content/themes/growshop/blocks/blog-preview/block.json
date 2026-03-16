@@ -1,0 +1,18 @@
+{
+    "name": "acf/blog-preview",
+    "title": "Blog Preview",
+    "description": "Sekcja bloga — ostatnie wpisy z WP_Query",
+    "category": "growshop",
+    "icon": "edit",
+    "keywords": ["blog", "wpisy", "artykuły", "insights"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/blog-preview/blog-preview.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}

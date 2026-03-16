@@ -4,3 +4,8 @@ wp-config.php
 *.log
 node_modules/
 .idea
+.DS_Store
+
+# Ignore hidden project-local tooling from imported theme
+wp-content/themes/growshop/**/.*/
+wp-content/themes/growshop/.nano-banana-config.json

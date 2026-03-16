@@ -1,0 +1,18 @@
+{
+    "name": "acf/case-studies",
+    "title": "Case Studies",
+    "description": "Sekcja 'Konkrety zamiast obietnic' — 3 karty case study z metrykami",
+    "category": "growshop",
+    "icon": "awards",
+    "keywords": ["case", "studies", "efekty", "konkrety"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/case-studies/case-studies.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}

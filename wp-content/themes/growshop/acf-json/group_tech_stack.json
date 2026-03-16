@@ -1,0 +1,57 @@
+{
+    "key": "group_tech_stack",
+    "title": "Technology Stack",
+    "fields": [
+        {
+            "key": "field_ts_heading",
+            "label": "Nagłówek",
+            "name": "ts_heading",
+            "type": "text",
+            "default_value": "Technology Stack"
+        },
+        {
+            "key": "field_ts_description",
+            "label": "Opis",
+            "name": "ts_description",
+            "type": "textarea",
+            "default_value": "Pracujemy z najlepszymi narzędziami na rynku. Generujemy wzrosty w Twoim sklepie dzięki sprawdzonym technologiom.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_ts_logos",
+            "label": "Logotypy",
+            "name": "ts_logos",
+            "type": "repeater",
+            "min": 0,
+            "max": 16,
+            "layout": "table",
+            "button_label": "Dodaj logo",
+            "sub_fields": [
+                {
+                    "key": "field_ts_logo_image",
+                    "label": "Logo",
+                    "name": "logo_image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/tech-stack"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

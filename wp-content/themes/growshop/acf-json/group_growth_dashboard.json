@@ -1,0 +1,65 @@
+{
+    "key": "group_growth_dashboard",
+    "title": "Growth Dashboard",
+    "fields": [
+        {
+            "key": "field_gd_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "gd_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-solid fa-chart-line"
+        },
+        {
+            "key": "field_gd_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "gd_sub_heading_text",
+            "type": "text",
+            "default_value": "Growth Dashboard"
+        },
+        {
+            "key": "field_gd_heading",
+            "label": "Nagłówek",
+            "name": "gd_heading",
+            "type": "text",
+            "default_value": "Twój system wzrostu w jednym widoku"
+        },
+        {
+            "key": "field_gd_description",
+            "label": "Opis",
+            "name": "gd_description",
+            "type": "textarea",
+            "default_value": "Zobacz, jak Grow Group transformuje wyniki Twojej firmy — od audytu AI po skalowanie sprzedaży.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_gd_cta_text",
+            "label": "Tekst CTA",
+            "name": "gd_cta_text",
+            "type": "text",
+            "default_value": "Chcesz takie wyniki? Umów bezpłatną konsultację"
+        },
+        {
+            "key": "field_gd_cta_link",
+            "label": "Link CTA",
+            "name": "gd_cta_link",
+            "type": "text",
+            "default_value": "#kontakt"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/growth-dashboard"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

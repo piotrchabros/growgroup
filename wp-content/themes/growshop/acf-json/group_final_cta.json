@@ -1,0 +1,84 @@
+{
+    "key": "group_final_cta",
+    "title": "Final CTA",
+    "fields": [
+        {
+            "key": "field_cta_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "cta_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-solid fa-rocket",
+            "instructions": "Klasa Font Awesome, np. fa-solid fa-rocket"
+        },
+        {
+            "key": "field_cta_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "cta_sub_heading_text",
+            "type": "text",
+            "default_value": "Zacznij teraz"
+        },
+        {
+            "key": "field_cta_heading",
+            "label": "Nagłówek",
+            "name": "cta_heading",
+            "type": "text",
+            "default_value": "Gotowy na wzrost sprzedaży?"
+        },
+        {
+            "key": "field_cta_description",
+            "label": "Opis",
+            "name": "cta_description",
+            "type": "textarea",
+            "default_value": "Dołącz do sklepów, które już zwiększyły przychody dzięki AI. Pierwsza konsultacja jest bezpłatna.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_cta_benefits",
+            "label": "Korzyści",
+            "name": "cta_benefits",
+            "type": "repeater",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "Dodaj korzyść",
+            "sub_fields": [
+                {
+                    "key": "field_cta_benefit_text",
+                    "label": "Tekst",
+                    "name": "benefit_text",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_cta_button_text",
+            "label": "Tekst przycisku",
+            "name": "cta_button_text",
+            "type": "text",
+            "default_value": "Umów konsultację"
+        },
+        {
+            "key": "field_cta_button_link",
+            "label": "Link przycisku",
+            "name": "cta_button_link",
+            "type": "text",
+            "default_value": "#kontakt"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/final-cta"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

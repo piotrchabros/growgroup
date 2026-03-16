@@ -1,0 +1,86 @@
+{
+    "key": "group_contact_form",
+    "title": "Formularz kontaktowy",
+    "fields": [
+        {
+            "key": "field_cf_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "cf_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_cf_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "cf_sub_heading_text",
+            "type": "text",
+            "default_value": "Kontakt"
+        },
+        {
+            "key": "field_cf_heading",
+            "label": "Nagłówek",
+            "name": "cf_heading",
+            "type": "text",
+            "default_value": "Umów bezpłatną konsultację"
+        },
+        {
+            "key": "field_cf_description",
+            "label": "Opis",
+            "name": "cf_description",
+            "type": "textarea",
+            "default_value": "Zobacz, jak możemy zwiększyć sprzedaż Twojego sklepu. Bezpłatna konsultacja + wstępny audyt marketingowy.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_cf_phone_label",
+            "label": "Etykieta telefonu",
+            "name": "cf_phone_label",
+            "type": "text",
+            "default_value": "Numer telefonu"
+        },
+        {
+            "key": "field_cf_phone_number",
+            "label": "Numer telefonu",
+            "name": "cf_phone_number",
+            "type": "text",
+            "default_value": "+48 789 354 695"
+        },
+        {
+            "key": "field_cf_email_label",
+            "label": "Etykieta email",
+            "name": "cf_email_label",
+            "type": "text",
+            "default_value": "Email"
+        },
+        {
+            "key": "field_cf_email_address",
+            "label": "Adres email",
+            "name": "cf_email_address",
+            "type": "text",
+            "default_value": "kontakt@growgroup.now"
+        },
+        {
+            "key": "field_cf_iframe_url",
+            "label": "URL formularza (iframe)",
+            "name": "cf_iframe_url",
+            "type": "url",
+            "instructions": "Wklej URL zewnętrznego formularza (np. Typeform, Google Forms, Calendly)"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/contact-form"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

@@ -1,0 +1,18 @@
+{
+    "name": "acf/service-cards",
+    "title": "Karty usług",
+    "description": "Sekcja 'W czym możemy Ci pomóc?' — 6 kart usług z ikonami",
+    "category": "growshop",
+    "icon": "grid-view",
+    "keywords": ["usługi", "service", "karty", "performance"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/service-cards/service-cards.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}

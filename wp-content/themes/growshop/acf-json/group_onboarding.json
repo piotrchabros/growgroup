@@ -1,0 +1,114 @@
+{
+    "key": "group_onboarding",
+    "title": "Onboarding",
+    "fields": [
+        {
+            "key": "field_ob_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "ob_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_ob_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "ob_sub_heading_text",
+            "type": "text",
+            "default_value": "Onboarding Process"
+        },
+        {
+            "key": "field_ob_heading",
+            "label": "Nagłówek",
+            "name": "ob_heading",
+            "type": "text",
+            "default_value": "Jak wygląda start"
+        },
+        {
+            "key": "field_ob_description",
+            "label": "Opis",
+            "name": "ob_description",
+            "type": "textarea",
+            "default_value": "Prosty, przejrzysty proces współpracy. Od pierwszej rozmowy do konkretnego planu działania.",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_ob_image",
+            "label": "Obraz sekcji",
+            "name": "ob_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_ob_cta_title",
+            "label": "Tytuł CTA karty",
+            "name": "ob_cta_title",
+            "type": "text",
+            "default_value": "Gotowy na wzrost?"
+        },
+        {
+            "key": "field_ob_cta_link_text",
+            "label": "Tekst linku CTA",
+            "name": "ob_cta_link_text",
+            "type": "text",
+            "default_value": "Umów konsultację"
+        },
+        {
+            "key": "field_ob_cta_link_url",
+            "label": "URL linku CTA",
+            "name": "ob_cta_link_url",
+            "type": "text",
+            "default_value": "#kontakt"
+        },
+        {
+            "key": "field_ob_steps",
+            "label": "Kroki onboardingu",
+            "name": "ob_steps",
+            "type": "repeater",
+            "min": 0,
+            "max": 6,
+            "layout": "block",
+            "button_label": "Dodaj krok",
+            "sub_fields": [
+                {
+                    "key": "field_ob_step_icon_class",
+                    "label": "Klasa ikony FA",
+                    "name": "icon_class",
+                    "type": "text",
+                    "wrapper": { "width": "25" }
+                },
+                {
+                    "key": "field_ob_step_title",
+                    "label": "Tytuł",
+                    "name": "title",
+                    "type": "text",
+                    "wrapper": { "width": "30" }
+                },
+                {
+                    "key": "field_ob_step_description",
+                    "label": "Opis",
+                    "name": "description",
+                    "type": "textarea",
+                    "rows": 2,
+                    "wrapper": { "width": "45" }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/onboarding"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

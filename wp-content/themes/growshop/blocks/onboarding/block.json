@@ -1,0 +1,18 @@
+{
+    "name": "acf/onboarding",
+    "title": "Onboarding",
+    "description": "Sekcja 'Jak wygląda start' — 3 kroki onboardingu + obraz z CTA",
+    "category": "growshop",
+    "icon": "arrow-right-alt",
+    "keywords": ["onboarding", "start", "proces", "kroki"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/onboarding/onboarding.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}

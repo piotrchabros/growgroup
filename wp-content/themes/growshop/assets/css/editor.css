@@ -1,0 +1,169 @@
+/**
+ * Editor Styles — Gutenberg block preview overrides
+ *
+ * Te style ładują się TYLKO w edytorze WP, nie na froncie.
+ * Naprawiają rendering bloków w kontekście edytora Gutenberg.
+ */
+
+/* ============================================================
+   1. Ciemne tło edytora (jak na froncie)
+   ============================================================ */
+
+.editor-styles-wrapper {
+    background-color: var(--secondary, #040404) !important;
+    color: var(--primary, #D1D1D1) !important;
+    font-family: var(--global-font, "Plus Jakarta Sans", sans-serif) !important;
+}
+
+/* Tło iframe edytora */
+.editor-styles-wrapper .is-root-container {
+    background-color: var(--secondary, #040404);
+}
+
+/* ============================================================
+   2. Typografia w edytorze
+   ============================================================ */
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+    color: var(--primary, #D1D1D1);
+    font-family: var(--global-font, "Plus Jakarta Sans", sans-serif);
+}
+
+.editor-styles-wrapper p {
+    color: var(--text-color, #8B8B8B);
+    font-family: var(--global-font, "Plus Jakarta Sans", sans-serif);
+}
+
+.editor-styles-wrapper a {
+    color: var(--accent-color, #00D170);
+}
+
+/* ============================================================
+   3. ACF Block preview — pełna szerokość
+   ============================================================ */
+
+/* Bloki ACF powinny zajmować pełną szerokość */
+.editor-styles-wrapper .acf-block-preview {
+    max-width: 100%;
+    width: 100%;
+}
+
+.editor-styles-wrapper [data-type^="acf/"] {
+    max-width: 100% !important;
+}
+
+/* Bloki sekcyjne — pełna szerokość bez marginesów edytora */
+.editor-styles-wrapper .section-banner,
+.editor-styles-wrapper .section,
+.editor-styles-wrapper .section-partner,
+.editor-styles-wrapper .section-footer {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ============================================================
+   4. Animacje — w edytorze pokazuj od razu (bez czekania na scroll)
+   ============================================================ */
+
+.editor-styles-wrapper .animate-box,
+.editor-styles-wrapper [data-animate] {
+    opacity: 1 !important;
+}
+
+.editor-styles-wrapper .animate__animated {
+    animation: none !important;
+}
+
+/* ============================================================
+   5. Hero Banner — poprawki edytorowe
+   ============================================================ */
+
+/* Video background w edytorze — pokaż placeholder zamiast iframe */
+.editor-styles-wrapper .banner-video-container {
+    position: relative;
+    min-height: 600px;
+}
+
+.editor-styles-wrapper #banner-video-background {
+    display: none;
+}
+
+.editor-styles-wrapper .banner-video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #040404 0%, #0a1a10 50%, #040404 100%);
+    z-index: 0;
+    border-radius: var(--global-border-radius, 25px);
+}
+
+/* Upewnij się że content hero jest nad pseudoelementem */
+.editor-styles-wrapper .hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Counter — pokaż wartość docelową od razu w edytorze */
+.editor-styles-wrapper .counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================
+   6. Scroll-down button — w edytorze nie potrzebuje animacji pulse
+   ============================================================ */
+
+.editor-styles-wrapper .scroll-down-btn::after,
+.editor-styles-wrapper .scroll-down-btn::before {
+    animation: none !important;
+}
+
+/* ============================================================
+   7. ACF field forms — czytelność na ciemnym tle
+   ============================================================ */
+
+/* ACF form fields w edytorze muszą być czytelne */
+.acf-block-fields,
+.acf-block-fields .acf-label,
+.acf-block-fields .acf-input,
+.acf-block-fields label {
+    color: #1e1e1e !important;
+}
+
+.acf-block-fields input,
+.acf-block-fields textarea,
+.acf-block-fields select {
+    color: #1e1e1e !important;
+    background-color: #fff !important;
+}
+
+/* ============================================================
+   8. Avatary i badge — widoczne w edytorze
+   ============================================================ */
+
+.editor-styles-wrapper .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.editor-styles-wrapper .banner-reviewer .detail span {
+    color: #fff;
+}
+
+/* ============================================================
+   9. Buttons — widoczne w edytorze
+   ============================================================ */
+
+.editor-styles-wrapper .btn-accent {
+    pointer-events: none;
+}

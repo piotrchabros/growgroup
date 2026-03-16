@@ -1,0 +1,156 @@
+{
+    "key": "group_case_studies",
+    "title": "Case Studies",
+    "fields": [
+        {
+            "key": "field_cs_sub_heading_icon",
+            "label": "Ikona sub-heading (klasa FA)",
+            "name": "cs_sub_heading_icon",
+            "type": "text",
+            "default_value": "fa-regular fa-circle-dot"
+        },
+        {
+            "key": "field_cs_sub_heading_text",
+            "label": "Sub-heading",
+            "name": "cs_sub_heading_text",
+            "type": "text",
+            "default_value": "Case Studies"
+        },
+        {
+            "key": "field_cs_heading",
+            "label": "Nagłówek",
+            "name": "cs_heading",
+            "type": "text",
+            "default_value": "Konkrety zamiast obietnic"
+        },
+        {
+            "key": "field_cs_description",
+            "label": "Opis",
+            "name": "cs_description",
+            "type": "textarea",
+            "default_value": "Rzeczywiste rezultaty naszych klientów. Zobacz, jak pomagamy firmom rosnąć.",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_cs_cta_text",
+            "label": "Tekst CTA",
+            "name": "cs_cta_text",
+            "type": "text",
+            "default_value": "Umów konsultację"
+        },
+        {
+            "key": "field_cs_cta_link",
+            "label": "Link CTA",
+            "name": "cs_cta_link",
+            "type": "text",
+            "default_value": "#kontakt"
+        },
+        {
+            "key": "field_cs_studies",
+            "label": "Case Studies",
+            "name": "cs_studies",
+            "type": "repeater",
+            "min": 0,
+            "max": 6,
+            "layout": "block",
+            "button_label": "Dodaj case study",
+            "sub_fields": [
+                {
+                    "key": "field_cs_study_icon_class",
+                    "label": "Klasa ikony FA",
+                    "name": "icon_class",
+                    "type": "text",
+                    "wrapper": { "width": "20" }
+                },
+                {
+                    "key": "field_cs_study_badge",
+                    "label": "Badge (kategoria)",
+                    "name": "badge",
+                    "type": "text",
+                    "wrapper": { "width": "20" }
+                },
+                {
+                    "key": "field_cs_study_color_variant",
+                    "label": "Wariant koloru",
+                    "name": "color_variant",
+                    "type": "select",
+                    "choices": {
+                        "cs-fashion": "Fashion (fioletowy)",
+                        "cs-garden": "Garden (zielony)",
+                        "cs-tech": "Tech (niebieski)"
+                    },
+                    "default_value": "cs-fashion",
+                    "wrapper": { "width": "20" }
+                },
+                {
+                    "key": "field_cs_study_problem",
+                    "label": "Problem",
+                    "name": "problem",
+                    "type": "textarea",
+                    "rows": 3,
+                    "wrapper": { "width": "40" }
+                },
+                {
+                    "key": "field_cs_study_solutions",
+                    "label": "Rozwiązania",
+                    "name": "solutions",
+                    "type": "repeater",
+                    "min": 0,
+                    "max": 8,
+                    "layout": "table",
+                    "button_label": "Dodaj rozwiązanie",
+                    "sub_fields": [
+                        {
+                            "key": "field_cs_solution_text",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_cs_study_metrics",
+                    "label": "Metryki",
+                    "name": "metrics",
+                    "type": "repeater",
+                    "min": 0,
+                    "max": 6,
+                    "layout": "table",
+                    "button_label": "Dodaj metrykę",
+                    "sub_fields": [
+                        {
+                            "key": "field_cs_metric_label",
+                            "label": "Etykieta",
+                            "name": "label",
+                            "type": "text",
+                            "wrapper": { "width": "50" }
+                        },
+                        {
+                            "key": "field_cs_metric_value",
+                            "label": "Wartość",
+                            "name": "value",
+                            "type": "text",
+                            "wrapper": { "width": "50" }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/case-studies"
+            }
+        ]
+    ],
+    "style": "default",
+    "position": "normal",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true,
+    "show_in_rest": 0
+}

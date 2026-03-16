@@ -1,0 +1,18 @@
+{
+    "name": "acf/process-steps",
+    "title": "Kroki procesu",
+    "description": "Sekcja 'Jak działamy' — 4 kroki procesu Growth Flow",
+    "category": "growshop",
+    "icon": "arrow-right-alt",
+    "keywords": ["proces", "kroki", "growth", "flow"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/process-steps/process-steps.php"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "jsx": false,
+        "mode": true
+    }
+}
