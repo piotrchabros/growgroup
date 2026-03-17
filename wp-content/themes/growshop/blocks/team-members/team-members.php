@@ -28,7 +28,7 @@ $default_members = array(
     <div class="hero-container">
         <div class="team-wrapper">
             <div class="card team-layout">
-                <div class="d-flex flex-column align-items-center gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                <div class="d-flex flex-column align-items-center gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                     <div class="sub-heading">
                         <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                         <span><?php echo esc_html( $sub_heading_text ); ?></span>

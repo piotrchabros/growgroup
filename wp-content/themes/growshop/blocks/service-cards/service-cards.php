@@ -33,17 +33,17 @@ $services_data = $services ?: $default_services;
     <div class="hero-container">
         <div class="d-flex flex-column justify-content-center text-center gspace-5">
             <div class="d-flex flex-column justify-content-center text-center gspace-2">
-                <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeInDown">
+                <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeIn">
                     <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                     <span><?php echo esc_html( $sub_heading_text ); ?></span>
                 </div>
-                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown"><?php echo esc_html( $heading ); ?></h2>
+                <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $heading ); ?></h2>
             </div>
             <div class="card-service-wrapper">
                 <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 grid-spacer-2">
                     <?php foreach ( $services_data as $service ) : ?>
                     <div class="col">
-                        <div class="card card-service animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                        <div class="card card-service animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="d-flex flex-row justify-content-between gspace-2 gspace-md-2 align-items-center">
                                 <div>
                                     <div class="service-icon-wrapper">

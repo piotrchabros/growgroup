@@ -21,12 +21,12 @@ $cta_link         = get_field( 'gd_cta_link' ) ?: '#kontakt';
 <div class="gd-header-section"<?php echo $anchor; ?>>
     <div class="hero-container">
         <div class="gd-header">
-            <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeInDown">
+            <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeIn">
                 <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                 <span><?php echo esc_html( $sub_heading_text ); ?></span>
             </div>
-            <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInUp"><?php echo esc_html( $heading ); ?></h2>
-            <p class="gd-subtitle animate-box animated animate__animated" data-animate="animate__fadeInUp"><?php echo esc_html( $description ); ?></p>
+            <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $heading ); ?></h2>
+            <p class="gd-subtitle animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $description ); ?></p>
         </div>
     </div>
 </div>

@@ -42,7 +42,7 @@ $cards_data = $cards ?: $default_cards;
 <div class="section"<?php echo $anchor; ?>>
     <div class="hero-container">
         <div class="d-flex flex-column justify-content-center text-center gspace-5">
-            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                 <div class="sub-heading align-self-center">
                     <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                     <span><?php echo esc_html( $sub_heading_text ); ?></span>
@@ -56,7 +56,7 @@ $cards_data = $cards ?: $default_cards;
                     $anim_class  = $highlighted ? 'animate-box animated slow animate__animated' : 'animate-box animated animate__animated';
                 ?>
                 <div class="col">
-                    <div class="<?php echo esc_attr( $card_class ); ?> <?php echo esc_attr( $anim_class ); ?>" data-animate="animate__fadeInUp">
+                    <div class="<?php echo esc_attr( $card_class ); ?> <?php echo esc_attr( $anim_class ); ?>" data-animate="animate__fadeIn">
                         <?php if ( $highlighted ) : ?><div class="spacer"></div><?php endif; ?>
                         <h4><?php echo esc_html( $card['title'] ); ?></h4>
                         <p><?php echo esc_html( $card['description'] ); ?></p>

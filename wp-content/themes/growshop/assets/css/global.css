@@ -4620,6 +4620,10 @@ body.lightmode .cta-service-banner::before{
     opacity: 0;
 }
 
+.animate-box.animate__animated {
+    animation-duration: 2s !important;
+}
+
 .animated{
     animation-duration: var(--animation-normal);
 }

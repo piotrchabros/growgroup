@@ -42,7 +42,7 @@ $anim_speeds = array( 'fast', '', 'slow' );
                     <?php foreach ( $steps_data as $index => $step ) :
                         $speed = isset( $anim_speeds[ $index ] ) ? $anim_speeds[ $index ] : '';
                     ?>
-                    <div class="card card-chooseus animate-box animated <?php echo esc_attr( $speed ); ?> animate__animated" data-animate="animate__fadeInLeft">
+                    <div class="card card-chooseus animate-box animated <?php echo esc_attr( $speed ); ?> animate__animated" data-animate="animate__fadeIn">
                         <div class="chooseus-icon-wrapper">
                             <div class="chooseus-spacer above"></div>
                             <div class="chooseus-icon-layout">
@@ -63,12 +63,12 @@ $anim_speeds = array( 'fast', '', 'slow' );
             <div class="chooseus-content-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="d-flex flex-column gspace-2">
-                        <div class="sub-heading animate-box animated animate__animated" data-animate="animate__fadeInDown">
+                        <div class="sub-heading animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                             <span><?php echo esc_html( $sub_heading_text ); ?></span>
                         </div>
-                        <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInDown"><?php echo esc_html( $heading ); ?></h2>
-                        <p class="mb-0 animate-box animated animate__animated" data-animate="animate__fadeInDown"><?php echo esc_html( $description ); ?></p>
+                        <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $heading ); ?></h2>
+                        <p class="mb-0 animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $description ); ?></p>
                     </div>
                     <div class="image-container">
                         <img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="chooseus-img">
@@ -77,7 +77,7 @@ $anim_speeds = array( 'fast', '', 'slow' );
                             <div class="d-flex flex-column align-items-end">
                                 <div class="chooseus-cta-spacer"></div>
                                 <div class="card-chooseus-cta-wrapper">
-                                    <div class="card card-chooseus-cta animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                                    <div class="card card-chooseus-cta animate-box animated animate__animated" data-animate="animate__fadeIn">
                                         <h5><?php echo esc_html( $cta_title ); ?></h5>
                                         <div class="link-wrapper">
                                             <a href="<?php echo esc_url( $cta_link_url ); ?>"><?php echo esc_html( $cta_link_text ); ?></a>

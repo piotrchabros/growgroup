@@ -61,7 +61,7 @@ $default_posts = array(
         <div class="d-flex flex-column gspace-5">
             <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5 m-0">
                 <div class="col col-xl-8 ps-0 pe-0">
-                    <div class="d-flex flex-column gspace-2 animate-box animated fast animate__animated" data-animate="animate__fadeInLeft">
+                    <div class="d-flex flex-column gspace-2 animate-box animated fast animate__animated" data-animate="animate__fadeIn">
                         <div class="sub-heading">
                             <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                             <span><?php echo esc_html( $sub_heading_text ); ?></span>
@@ -70,7 +70,7 @@ $default_posts = array(
                     </div>
                 </div>
                 <div class="col col-xl-4 ps-0 pe-0">
-                    <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                    <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <p><?php echo esc_html( $description ); ?></p>
                         <div class="link-wrapper">
                             <a href="<?php echo esc_url( $blog_link_url ); ?>"><?php echo esc_html( $blog_link_text ); ?></a>
@@ -87,7 +87,7 @@ $default_posts = array(
                         $thumb_url  = get_the_post_thumbnail_url( get_the_ID(), 'medium_large' );
                     ?>
                     <div class="col">
-                        <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <?php if ( $thumb_url ) : ?>
                             <div class="blog-image">
                                 <img src="<?php echo esc_url( $thumb_url ); ?>" alt="<?php the_title_attribute(); ?>">
@@ -116,7 +116,7 @@ $default_posts = array(
                 <?php else : ?>
                     <?php foreach ( $default_posts as $post_item ) : ?>
                     <div class="col">
-                        <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <div class="card card-blog animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="blog-image">
                                 <img src="<?php echo esc_url( $post_item['image'] ); ?>" alt="Blog">
                             </div>

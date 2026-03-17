@@ -25,7 +25,7 @@ $default_steps = array(
     array( 'icon_class' => 'fa-solid fa-arrow-trend-up fa-3x text-white', 'number' => '04', 'title' => 'Wzrost Przychodu', 'description' => 'Budujemy stabilny i przewidywalny biznes oparty na danych.' ),
 );
 $steps_data = $steps ?: $default_steps;
-$animations = array( 'animate__fadeInUp', 'animate__fadeInDown', 'animate__fadeInUp', 'animate__fadeInDown' );
+$animations = array( 'animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn', 'animate__fadeIn' );
 ?>
 
 <div class="section-wrapper-digital-process"<?php echo $anchor; ?>>
@@ -34,7 +34,7 @@ $animations = array( 'animate__fadeInUp', 'animate__fadeInDown', 'animate__fadeI
             <div class="digital-process-content">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
                     <div class="col">
-                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInDown">
+                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="sub-heading">
                                 <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                                 <span><?php echo esc_html( $sub_heading_text ); ?></span>
@@ -43,7 +43,7 @@ $animations = array( 'animate__fadeInUp', 'animate__fadeInDown', 'animate__fadeI
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated fast animate__animated" data-animate="animate__fadeInDown">
+                        <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated fast animate__animated" data-animate="animate__fadeIn">
                             <p><?php echo esc_html( $description ); ?></p>
                             <div class="link-wrapper">
                                 <a href="<?php echo esc_url( $cta_link ); ?>"><?php echo esc_html( $cta_text ); ?></a>
@@ -57,7 +57,7 @@ $animations = array( 'animate__fadeInUp', 'animate__fadeInDown', 'animate__fadeI
                         <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1">
                             <?php foreach ( $steps_data as $index => $step ) :
                                 $is_first = ( $index === 0 );
-                                $anim = isset( $animations[ $index ] ) ? $animations[ $index ] : 'animate__fadeInUp';
+                                $anim = isset( $animations[ $index ] ) ? $animations[ $index ] : 'animate__fadeIn';
                             ?>
                             <div class="col">
                                 <?php if ( $is_first ) : ?>

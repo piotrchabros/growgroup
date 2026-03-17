@@ -32,7 +32,7 @@ $benefits_data = $benefits ?: $default_benefits;
             <div class="newsletter-layout">
                 <div class="spacer"></div>
                 <div class="d-flex flex-column gspace-5 position-relative z-2">
-                    <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <div class="sub-heading justify-content-center">
                             <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                             <span><?php echo esc_html( $sub_heading_text ); ?></span>
@@ -40,7 +40,7 @@ $benefits_data = $benefits ?: $default_benefits;
                         <h3 class="title-heading"><?php echo esc_html( $heading ); ?></h3>
                         <p><?php echo esc_html( $description ); ?></p>
                     </div>
-                    <div class="d-flex flex-column flex-md-row gspace-3 justify-content-center animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <div class="d-flex flex-column flex-md-row gspace-3 justify-content-center animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <?php foreach ( $benefits_data as $benefit ) : ?>
                         <div class="d-flex align-items-center gspace-1">
                             <i class="fa-solid fa-circle-check accent-color"></i>
@@ -48,7 +48,7 @@ $benefits_data = $benefits ?: $default_benefits;
                         </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <div class="animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <a href="<?php echo esc_url( $cta_link ); ?>" class="btn btn-accent">
                             <span class="btn-title">
                                 <span><?php echo esc_html( $cta_text ); ?></span>

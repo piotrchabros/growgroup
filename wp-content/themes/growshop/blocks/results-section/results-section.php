@@ -42,11 +42,11 @@ $checklist_data = $checklist ?: $default_checklist;
         <div class="d-flex flex-column flex-xl-row gspace-5">
             <div class="expertise-img-layout">
                 <div class="image-container expertise-img">
-                    <img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="img-fluid animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="img-fluid animate-box animated animate__animated" data-animate="animate__fadeIn">
                     <div class="expertise-layout">
                         <div class="d-flex flex-column">
                             <div class="card-expertise-wrapper">
-                                <div class="card card-expertise animate-box animated animate__animated" data-animate="animate__fadeInDown">
+                                <div class="card card-expertise animate-box animated animate__animated" data-animate="animate__fadeIn">
                                     <h4><?php echo esc_html( $overlay_title ); ?></h4>
                                     <p><?php echo esc_html( $overlay_desc ); ?></p>
                                     <div class="d-flex align-items-center flex-row gspace-2 expertise-link">
@@ -62,11 +62,11 @@ $checklist_data = $checklist ?: $default_checklist;
                 </div>
             </div>
             <div class="expertise-title">
-                <div class="sub-heading animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                <div class="sub-heading animate-box animated animate__animated" data-animate="animate__fadeIn">
                     <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                     <span><?php echo esc_html( $sub_heading_text ); ?></span>
                 </div>
-                <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeInRight"><?php echo esc_html( $heading ); ?></h2>
+                <h2 class="title-heading animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo esc_html( $heading ); ?></h2>
                 <p><?php echo esc_html( $description ); ?></p>
                 <div class="d-flex flex-column flex-md-row gspace-2">
                     <div class="expertise-list w-100">

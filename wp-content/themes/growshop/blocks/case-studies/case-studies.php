@@ -80,7 +80,7 @@ $studies_data = $studies ?: $default_studies;
             <div class="card card-case-studies">
                 <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
                     <div class="col">
-                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
+                        <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="sub-heading">
                                 <i class="<?php echo esc_attr( $sub_heading_icon ); ?>"></i>
                                 <span><?php echo esc_html( $sub_heading_text ); ?></span>
@@ -89,7 +89,7 @@ $studies_data = $studies ?: $default_studies;
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex flex-column h-100 justify-content-end gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                        <div class="d-flex flex-column h-100 justify-content-end gspace-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <p><?php echo esc_html( $description ); ?></p>
                             <div class="link-wrapper">
                                 <a href="<?php echo esc_url( $cta_link ); ?>"><?php echo esc_html( $cta_text ); ?></a>
@@ -105,7 +105,7 @@ $studies_data = $studies ?: $default_studies;
                         $metrics    = $study['metrics'] ?? array();
                     ?>
                     <div class="col">
-                        <div class="card card-cs <?php echo esc_attr( $variant ); ?> animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <div class="card card-cs <?php echo esc_attr( $variant ); ?> animate-box animated animate__animated" data-animate="animate__fadeIn">
                             <div class="cs-header">
                                 <i class="<?php echo esc_attr( $study['icon_class'] ); ?>"></i>
                             </div>

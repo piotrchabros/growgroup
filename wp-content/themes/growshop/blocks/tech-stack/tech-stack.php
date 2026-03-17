@@ -29,7 +29,7 @@ $default_logos = array(
 
 <div class="section-partner"<?php echo $anchor; ?>>
     <div class="hero-container">
-        <div class="card card-partner animate-box animated animate__animated" data-animate="animate__fadeInRight">
+        <div class="card card-partner animate-box animated animate__animated" data-animate="animate__fadeIn">
             <div class="partner-spacer"></div>
             <div class="row row-cols-xl-2 row-cols-1 align-items-center px-5 position-relative z-2">
                 <div class="col">

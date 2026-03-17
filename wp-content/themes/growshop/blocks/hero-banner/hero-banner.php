@@ -39,13 +39,13 @@ $default_stats = array(
 ?>
 
 <div class="section-banner"<?php echo $anchor; ?>>
-    <div class="banner-video-container keep-dark animate-box animated animate__animated" data-animate="animate__fadeInUp">
+    <div class="banner-video-container keep-dark animate-box animated animate__animated" data-animate="animate__fadeIn">
         <div id="banner-video-background" data-video-id="<?php echo esc_attr( $youtube_video_id ); ?>"></div>
         <div class="hero-container position-relative">
             <div class="d-flex flex-column gspace-2">
-                <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeInLeft"><?php echo wp_kses_post( $heading ); ?></h1>
+                <h1 class="title-heading-banner animate-box animated animate__animated" data-animate="animate__fadeIn"><?php echo wp_kses_post( $heading ); ?></h1>
                 <div class="banner-heading">
-                    <div class="banner-video-content order-xl-1 order-2 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                    <div class="banner-video-content order-xl-1 order-2 animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <div class="d-flex flex-column flex-xl-row text-xl-start text-center align-items-center gspace-5">
                             <a href="<?php echo esc_url( $scroll_link ); ?>" class="scroll-down-btn" aria-label="Przewiń w dół">
                                 <i class="fa-solid fa-arrow-down"></i>
@@ -53,7 +53,7 @@ $default_stats = array(
                             <p><?php echo esc_html( $scroll_text ); ?></p>
                         </div>
                     </div>
-                    <div class="banner-content order-xl-2 order-1 animate-box animated animate__animated" data-animate="animate__fadeInRight">
+                    <div class="banner-content order-xl-2 order-1 animate-box animated animate__animated" data-animate="animate__fadeIn">
                         <p><?php echo esc_html( $description ); ?></p>
                         <div class="d-flex flex-md-row flex-column justify-content-center justify-content-xl-start align-self-center align-self-xl-start gspace-3">
                             <a href="<?php echo esc_url( $cta_link ); ?>" class="btn btn-accent">
@@ -92,7 +92,7 @@ $default_stats = array(
                 </div>
 
                 <!-- Stats Section -->
-                <div class="row row-cols-2 row-cols-md-4 g-4 mt-5 animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                <div class="row row-cols-2 row-cols-md-4 g-4 mt-5 animate-box animated animate__animated" data-animate="animate__fadeIn">
                     <?php
                     $stats_data = $stats ?: $default_stats;
                     foreach ( $stats_data as $stat ) :

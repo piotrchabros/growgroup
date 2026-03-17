@@ -55,3 +55,36 @@ $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
         </nav>
     </div>
 </header>
+
+<!-- Mobile Sidebar -->
+<div class="sidebar-overlay"></div>
+<div class="sidebar">
+    <div class="sidebar-header">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php bloginfo( 'name' ); ?>">
+            <?php if ( $logo ) : ?>
+                <img src="<?php echo esc_url( $logo['url'] ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo['alt'] ?: get_bloginfo( 'name' ) ); ?>">
+            <?php else : ?>
+                <span class="navbar-brand"><?php bloginfo( 'name' ); ?></span>
+            <?php endif; ?>
+        </a>
+        <button class="close-btn" aria-label="Zamknij menu">✕</button>
+    </div>
+    <?php
+    wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'container'      => false,
+        'menu_class'     => 'menu',
+        'fallback_cb'    => false,
+        'depth'          => 1,
+        'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+    ) );
+    ?>
+    <div class="sidebar-phone">
+        <a href="tel:<?php echo esc_attr( preg_replace( '/\s+/', '', $phone ) ); ?>" class="navbar-phone-link" style="justify-content:flex-start; padding: 10px;">
+            <span class="navbar-phone-icon" style="width:36px;height:36px;font-size:1rem;">
+                <i class="fa-solid fa-phone-volume"></i>
+            </span>
+            <h6 style="margin:0;"><?php echo esc_html( $phone ); ?></h6>
+        </a>
+    </div>
+</div>
