@@ -3,10 +3,10 @@
 /* 2.1 Colors Variables */
 
 :root{
-    --primary: #D1D1D1;
+    --primary: #E0E0E0;
     --secondary: #040404;
-    --text-color: #8B8B8B;
-    --text-color-2: var(--secondary); 
+    --text-color: #ABABAB;
+    --text-color-2: #ABABAB;
     --accent-color: #00D170;
     --accent-color-2: #FFFFFF;
     --accent-color-3: #1F1F1F;
@@ -161,9 +161,9 @@ body{
 }
 
 body.lightmode .keep-dark {
-    --primary: #D1D1D1;
+    --primary: #E0E0E0;
     --secondary: #040404;
-    --text-color: #8B8B8B;
+    --text-color: #ABABAB;
     --accent-color: #00D170;
     --accent-color-2: #FFFFFF;
     --accent-color-3: #1F1F1F;
@@ -1519,7 +1519,7 @@ body.lightmode .digital-process-banner{
     -webkit-background-clip: text;
     background-clip: text;
     background-color: transparent;
-    background-image: linear-gradient(284deg, rgba(209, 209, 209, 0.3) 3%, var(--primary) 100%);
+    background-image: linear-gradient(284deg, rgba(224, 224, 224, 0.3) 3%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
     margin-bottom: 2rem;
@@ -1529,7 +1529,7 @@ body.lightmode .digital-process-banner{
      display: inline-block;
     -webkit-background-clip: text;
     background-color: transparent;
-    background-image: linear-gradient(284deg, rgba(209, 209, 209, 0.3) 3%, var(--primary) 100%);
+    background-image: linear-gradient(284deg, rgba(224, 224, 224, 0.3) 3%, var(--primary) 100%);
     -webkit-text-fill-color: transparent;
     -webkit-tap-highlight-color: transparent;
 }
@@ -3300,6 +3300,75 @@ body.lightmode .case-studies-content::before{
 
 .comments-area .comment-submit:hover {
     color: var(--accent-color) !important;
+}
+
+/* ================== 32c. Page Content (polityka, regulamin, etc.) ================== */
+
+.page-content {
+    max-width: 860px;
+    margin: 0 auto;
+    color: var(--text-color);
+    line-height: var(--line-height-extra-loose);
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+    color: var(--primary);
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+}
+
+.page-content h1 {
+    font-size: var(--font-size-11xl);
+    margin-top: 0;
+}
+
+.page-content h2 {
+    font-size: var(--font-size-8xl);
+}
+
+.page-content h3 {
+    font-size: var(--font-size-6xl);
+}
+
+.page-content p {
+    margin-bottom: 1.2em;
+    color: var(--text-color);
+}
+
+.page-content ul,
+.page-content ol {
+    padding-left: 2em;
+    margin-bottom: 1.2em;
+    list-style: disc;
+}
+
+.page-content ol {
+    list-style: decimal;
+}
+
+.page-content li {
+    margin-bottom: 0.4em;
+    color: var(--text-color);
+}
+
+.page-content a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.page-content a:hover {
+    opacity: 0.8;
+}
+
+.page-content strong,
+.page-content b {
+    color: var(--primary);
+    font-weight: var(--font-weight-bold);
 }
 
 /* ================== 33. Pricing Components ================== */

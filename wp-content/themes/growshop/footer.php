@@ -109,7 +109,6 @@ $tiktok    = get_field( 'social_tiktok', 'option' );
                         <span class="copyright"><?php echo esc_html( $copyright ); ?></span>
                         <div class="d-flex flex-row gspace-2">
                             <a href="<?php echo esc_url( $privacy_url ); ?>" class="legal-link">Polityka prywatności</a>
-                            <a href="<?php echo esc_url( $terms_url ); ?>" class="legal-link">Regulamin</a>
                         </div>
                     </div>
                     <div class="footer-spacer"></div>
