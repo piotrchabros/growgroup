@@ -36,7 +36,7 @@ $default_members = array(
                     <h2 class="title-heading"><?php echo esc_html( $heading ); ?></h2>
                     <p class="text-center"><?php echo esc_html( $description ); ?></p>
                 </div>
-                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4">
+                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4 justify-content-center">
                     <?php
                     if ( $members ) :
                         foreach ( $members as $member ) :
