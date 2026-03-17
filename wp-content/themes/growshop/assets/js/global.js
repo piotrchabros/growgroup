@@ -145,38 +145,39 @@ jQuery(function ($) {
     }
 
     // ============================================================
-    // Sidebar (mobile menu)
+    // Mobile menu (full-screen overlay)
     // ============================================================
     function initSidebar() {
         var $menuBtn = $('.nav-btn');
-        var $closeBtn = $('.close-btn');
-        var $overlay = $('.sidebar-overlay');
-        var $sidebar = $('.sidebar');
+        var $closeBtn = $('.mobile-menu-close');
+        var $menu = $('#mobileMenu');
 
         $menuBtn.on('click', function () {
-            $overlay.addClass('active');
-            setTimeout(function () { $sidebar.addClass('active'); }, 200);
+            $menu.addClass('active').attr('aria-hidden', 'false');
+            $('body').addClass('menu-open');
         });
 
         $closeBtn.on('click', function () {
-            $sidebar.removeClass('active');
-            setTimeout(function () { $overlay.removeClass('active'); }, 200);
+            $menu.removeClass('active').attr('aria-hidden', 'true');
+            $('body').removeClass('menu-open');
         });
 
-        $overlay.on('click', function () {
-            $sidebar.removeClass('active');
-            setTimeout(function () { $overlay.removeClass('active'); }, 200);
+        // Close on link click
+        $menu.find('a').on('click', function () {
+            $menu.removeClass('active').attr('aria-hidden', 'true');
+            $('body').removeClass('menu-open');
+        });
+
+        // Close on Escape
+        $(document).on('keydown', function (e) {
+            if (e.key === 'Escape' && $menu.hasClass('active')) {
+                $menu.removeClass('active').attr('aria-hidden', 'true');
+                $('body').removeClass('menu-open');
+            }
         });
     }
 
     function initSidebarDropdown() {
-        $(".sidebar-dropdown-btn").each(function () {
-            $(this).on("click", function () {
-                var $dropdownMenu = $(this).parent().next(".sidebar-dropdown-menu");
-                var isOpen = $dropdownMenu.hasClass("active");
-                $(".sidebar-dropdown-menu").not($dropdownMenu).removeClass("active");
-                $dropdownMenu.toggleClass("active", !isOpen);
-            });
-        });
+        // No-op: full-screen menu has no dropdowns
     }
 });
