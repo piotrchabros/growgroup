@@ -1146,6 +1146,7 @@ body.lightmode #newsletterForm input:autofill:focus{
 .banner-video-content p{
     max-width: 50%;
     font-size: var(--font-size-base);
+    color: var(--primary);
 }
 
 
@@ -1228,6 +1229,10 @@ body.lightmode .banner-layout-wrapper::before {
     width: 53%;
     gap: 50px;
     text-align: start;
+}
+
+.banner-content p{
+    color: var(--primary);
 }
 
 .banner-reviewer{

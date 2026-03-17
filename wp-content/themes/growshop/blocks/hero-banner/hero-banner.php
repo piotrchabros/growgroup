@@ -109,7 +109,7 @@ $default_stats = array(
                                 <span class="counter text-white fs-2 fw-bold" data-target="<?php echo esc_attr( $value ); ?>">0</span>
                                 <span class="counter-detail text-white"><?php echo esc_html( $suffix ); ?></span>
                             </div>
-                            <p class="text-white <?php echo $is_bold ? 'fw-bold opacity-100 mt-2' : 'opacity-75'; ?>"><?php echo esc_html( $label ); ?></p>
+                            <p class="text-white <?php echo $is_bold ? 'fw-bold mt-2' : ''; ?>"><?php echo esc_html( $label ); ?></p>
                         </div>
                     </div>
                     <?php endforeach; ?>
