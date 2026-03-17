@@ -62,10 +62,19 @@
         },
         {
             "key": "field_cf_iframe_url",
-            "label": "URL formularza (iframe)",
+            "label": "URL formularza (iframe) — stare pole",
             "name": "cf_iframe_url",
             "type": "url",
-            "instructions": "Wklej URL zewnętrznego formularza (np. Typeform, Google Forms, Calendly)"
+            "instructions": "Wklej URL zewnętrznego formularza (np. Typeform, Google Forms, Calendly). Używane tylko gdy pole embed code poniżej jest puste."
+        },
+        {
+            "key": "field_cf_embed_code",
+            "label": "Kod embed formularza (iframe + script)",
+            "name": "cf_embed_code",
+            "type": "textarea",
+            "instructions": "Wklej pełny kod embed (iframe + script). Ma priorytet nad polem URL powyżej.",
+            "rows": 8,
+            "new_lines": ""
         }
     ],
     "location": [
