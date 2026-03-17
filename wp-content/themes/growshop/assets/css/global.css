@@ -856,6 +856,13 @@ body.menu-open {
 /* Legacy sidebar refs (keep for content-edit-sidebar etc) */
 .sidebar-overlay { display: none; }
 
+/* Hide Bootstrap collapse on mobile — we use full-screen .mobile-menu instead */
+@media (max-width: 1199.98px) {
+    #navbarNav.navbar-collapse {
+        display: none !important;
+    }
+}
+
 /* ================== 10. Content Edit Sidebar ================== */
 
 .content-edit-sidebar {

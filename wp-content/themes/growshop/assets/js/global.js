@@ -152,27 +152,29 @@ jQuery(function ($) {
         var $closeBtn = $('.mobile-menu-close');
         var $menu = $('#mobileMenu');
 
-        $menuBtn.on('click', function () {
+        $menuBtn.on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
             $menu.addClass('active').attr('aria-hidden', 'false');
+            $menuBtn.attr('aria-expanded', 'true');
             $('body').addClass('menu-open');
         });
 
-        $closeBtn.on('click', function () {
+        function closeMenu() {
             $menu.removeClass('active').attr('aria-hidden', 'true');
+            $menuBtn.attr('aria-expanded', 'false');
             $('body').removeClass('menu-open');
-        });
+        }
+
+        $closeBtn.on('click', closeMenu);
 
         // Close on link click
-        $menu.find('a').on('click', function () {
-            $menu.removeClass('active').attr('aria-hidden', 'true');
-            $('body').removeClass('menu-open');
-        });
+        $menu.find('a').on('click', closeMenu);
 
         // Close on Escape
         $(document).on('keydown', function (e) {
             if (e.key === 'Escape' && $menu.hasClass('active')) {
-                $menu.removeClass('active').attr('aria-hidden', 'true');
-                $('body').removeClass('menu-open');
+                closeMenu();
             }
         });
     }

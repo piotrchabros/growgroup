@@ -27,8 +27,8 @@ $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
                         <?php endif; ?>
                     </a>
                 </div>
-                <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <button class="navbar-toggler nav-btn" type="button"
+                    aria-controls="mobileMenu" aria-expanded="false" aria-label="Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
