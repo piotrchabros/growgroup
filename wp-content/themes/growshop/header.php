@@ -56,35 +56,42 @@ $phone        = get_field( 'contact_phone', 'option' ) ?: '+48 789 354 695';
     </div>
 </header>
 
-<!-- Mobile Sidebar -->
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <div class="sidebar-header">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php bloginfo( 'name' ); ?>">
-            <?php if ( $logo ) : ?>
-                <img src="<?php echo esc_url( $logo['url'] ); ?>" class="site-logo site-logo-wordmark img-fluid" alt="<?php echo esc_attr( $logo['alt'] ?: get_bloginfo( 'name' ) ); ?>">
-            <?php else : ?>
-                <span class="navbar-brand"><?php bloginfo( 'name' ); ?></span>
-            <?php endif; ?>
-        </a>
-        <button class="close-btn" aria-label="Zamknij menu">✕</button>
-    </div>
-    <?php
-    wp_nav_menu( array(
-        'theme_location' => 'primary',
-        'container'      => false,
-        'menu_class'     => 'menu',
-        'fallback_cb'    => false,
-        'depth'          => 1,
-        'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
-    ) );
-    ?>
-    <div class="sidebar-phone">
-        <a href="tel:<?php echo esc_attr( preg_replace( '/\s+/', '', $phone ) ); ?>" class="navbar-phone-link" style="justify-content:flex-start; padding: 10px;">
-            <span class="navbar-phone-icon" style="width:36px;height:36px;font-size:1rem;">
-                <i class="fa-solid fa-phone-volume"></i>
-            </span>
-            <h6 style="margin:0;"><?php echo esc_html( $phone ); ?></h6>
-        </a>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-menu-glow"></div>
+    <div class="mobile-menu-inner">
+        <div class="mobile-menu-header">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mobile-menu-logo-link" aria-label="<?php bloginfo( 'name' ); ?>">
+                <?php if ( $logo ) : ?>
+                    <img src="<?php echo esc_url( $logo['url'] ); ?>" class="img-fluid" alt="<?php echo esc_attr( $logo['alt'] ?: get_bloginfo( 'name' ) ); ?>" style="height:36px;width:auto;">
+                <?php else : ?>
+                    <span class="navbar-brand"><?php bloginfo( 'name' ); ?></span>
+                <?php endif; ?>
+            </a>
+            <button class="mobile-menu-close" aria-label="Zamknij menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'container'      => false,
+                'menu_class'     => 'mobile-menu-list',
+                'fallback_cb'    => false,
+                'depth'          => 1,
+                'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+            ) );
+            ?>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="tel:<?php echo esc_attr( preg_replace( '/\s+/', '', $phone ) ); ?>" class="mobile-menu-phone">
+                <span class="mobile-menu-phone-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </span>
+                <span><?php echo esc_html( $phone ); ?></span>
+            </a>
+        </div>
     </div>
 </div>

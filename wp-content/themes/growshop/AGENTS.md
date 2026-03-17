@@ -34,7 +34,7 @@ growshop/
 ├── assets/
 │   ├── css/global.css     # Shared styles (root vars, base, layout, components)
 │   ├── css/vendor/        # Bootstrap, animate, swiper, fonts
-│   ├── js/global.js       # Counter, animate, theme switch, sidebar
+│   ├── js/global.js       # Counter, animate, theme switch, mobile menu overlay
 │   ├── js/vendor/         # bootstrap.bundle, swiper, jquery
 │   └── images/            # Wszystkie obrazy
 ├── blocks/                # ACF Gutenberg blocks
@@ -46,6 +46,15 @@ growshop/
 ├── acf-json/              # ACF field group JSONy (auto-sync, git-tracked)
 └── original/              # Archiwum: www/, Marko v2, docs/, generated_imgs/
 ```
+
+## Mobile Menu
+
+Full-screen overlay — uruchamiana przez `.nav-btn` (hamburger w navbarze):
+- HTML: `header.php` → `<div class="mobile-menu" id="mobileMenu">` z `.mobile-menu-inner`, `.mobile-menu-close`, `wp_nav_menu(mobile-menu-list)`, `.mobile-menu-footer`
+- CSS: `global.css` sekcja 09 — `opacity/visibility/transform` transition, staggered `:nth-child` delays na linkach, `body.menu-open` scroll lock
+- JS: `global.js` `initSidebar()` — toggle `.active` / `aria-hidden` na `#mobileMenu`, `body.menu-open`, Escape key handler
+
+**Nie używaj `.sidebar`, `.sidebar-overlay`, `.close-btn`** — te klasy są usunięte.
 
 ## Critical Rules
 
